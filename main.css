@@ -6,7 +6,8 @@
 html{
     font-family: medium;
     font-size: 1em;
-    overflow: hidden !important;
+    overflow-x: hidden !important;
+    overflow-y: hidden !important;
 }
 
 *{
@@ -16,9 +17,10 @@ html{
 }
 
 body{
-    height: 100%;
-    width: 100%;
-    overflow: hidden;
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden !important;
+    overflow-y: hidden !important;
     padding: 0;
     margin: 0;
 }
@@ -256,13 +258,13 @@ a​:visited {
     .largeTitle{
         border: 2px solid rgba(0, 0, 0, 0.50);
         font-size: 2em;
-        padding: 12px 32px;
+        padding: 8px 24px;
     }
     
     .largeButton{
         position: fixed;
-        right: 1.6rem;
-        bottom: 2rem;
+        right: 1.4rem;
+        bottom: 1.6rem;
         display: inline-flex;
         cursor: pointer;
     }
