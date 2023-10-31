@@ -287,10 +287,10 @@ a​:visited {
     .trackContent{
         font-size: 1.2em;
         text-align: center;
-        padding-top: 30vh;
+        padding-top: 32vh;
         padding-bottom: 12vh;
         padding-left: 1rem;
         padding-right: 1rem;
-        width: 94vw;
+        width: 54vw;
     }
   }
