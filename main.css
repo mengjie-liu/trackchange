@@ -271,8 +271,8 @@ a​:visited {
 
     .track{
         height: 80vh;
-        padding-left: 1rem;
-        padding-right: 1rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
         transform-origin: 50% 32%;
         transform: perspective(40em) rotateX(45deg);
         overflow-y: scroll;
@@ -285,12 +285,12 @@ a​:visited {
     }
 
     .trackContent{
-        font-size: 1.2em;
+        font-size: 1.4em;
         text-align: center;
-        padding-top: 36vh;
+        padding-top: 40vh;
         padding-bottom: 12vh;
-        padding-left: 1rem;
-        padding-right: 1rem;
+        padding-left: 1.2rem;
+        padding-right: 1.2rem;
         width: 54vw;
     }
 
