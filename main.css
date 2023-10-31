@@ -287,10 +287,15 @@ a​:visited {
     .trackContent{
         font-size: 1.2em;
         text-align: center;
-        padding-top: 32vh;
+        padding-top: 36vh;
         padding-bottom: 12vh;
         padding-left: 1rem;
         padding-right: 1rem;
         width: 54vw;
     }
+
+    .cloud{
+    width:120vw;
+    height: 40vh;
+}
   }
