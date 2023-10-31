@@ -285,12 +285,12 @@ a​:visited {
     }
 
     .trackContent{
-        font-size: 1.6em;
+        font-size: 1.2em;
         text-align: center;
         padding-top: 48vh;
-        padding-bottom: 16vh;
+        padding-bottom: 12vh;
         padding-left: 1rem;
         padding-right: 1rem;
-        width: calc(94vw/3);
+        width: 50vw;
     }
   }
