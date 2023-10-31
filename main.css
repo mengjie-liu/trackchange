@@ -1,0 +1,239 @@
+@font-face {
+    font-family: medium;
+    src: url(Assets/Monotype\ \ -\ Helvetica\ Now\ Display\ Medium.otf);
+}
+
+html{
+    font-family: medium;
+    font-size: 1em;
+    overflow:hidden;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+}
+
+body{
+    height: 100%;
+    width: 100%;
+    overflow: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+/* header */
+header{
+    font-size: 3em;
+    padding-top: 2.4rem;
+    padding-left: 2.4rem;
+    padding-right: 2.4rem;
+    display: flex; 
+    justify-content: space-between;
+    position: relative;
+    z-index: 1;
+}
+
+.cloud{
+    width:101vw;
+    height: 50vh;
+    background: linear-gradient(180deg, #FFF 40%, rgba(255, 255, 255, 0.00) 100%);
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 0;
+    pointer-events: none;
+}
+
+.studioLogo{
+    cursor: pointer;
+}
+
+.title{
+    border: 2px solid black;
+    border-radius: 100px;
+    width: fit-content;
+    display: inline-flex;
+    padding: 12px 32px;
+    justify-content: center;
+    align-items: center;
+}
+
+.title:first-child{
+    margin-right: 0.6em;
+}
+
+.selected{
+    border: 2px solid white;
+    background-color: black;
+    color: white;
+}
+
+.smallButton{
+    display: inline-flex;
+    cursor: pointer;
+}
+
+
+/* bottom button */
+.largeTitle{
+    border: 3px solid rgba(0, 0, 0, 0.50);
+    font-size: 6em;
+    border-radius: 100px;
+    width: fit-content;
+    display: inline-flex;
+    padding: 24px 64px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background: rgba(255, 255, 255, 0.50);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+}
+
+.largeButton{
+    position: fixed;
+    right: 3rem;
+    bottom: 3.6rem;
+    display: inline-flex;
+    cursor: pointer;
+}
+
+.largeButton:hover .largeTitle{
+    animation-name: changeColor;
+    animation-duration: 2.6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes changeColor {
+    0%   {
+        color: white;
+        border: 3px solid rgba(255, 255, 255, 0.50);
+        background: rgba(0, 0, 0, 0.50);}
+    5%   {
+        color: white;
+        border: 3px solid rgba(255, 255, 255, 0.50);
+        background: rgba(0, 0, 0, 0.50);}
+    25%  {
+        color: white;
+        border: 3px solid rgba(255, 255, 255, 0.50);
+        background: rgba(0, 255, 0, 0.50);}
+    50%  {
+        color: white;
+        border: 3px solid rgba(255, 255, 255, 0.50);
+        background: rgba(0, 255, 255, 0.50);}
+    75% {
+        color: white;
+        border: 3px solid rgba(255, 255, 255, 0.50);
+        background: rgba(255, 0, 255, 0.50);}
+    100%   {
+        color: white;
+        border: 3px solid rgba(255, 255, 255, 0.50);
+        background: rgba(0, 0, 0, 0.50);}
+}
+
+
+/* tracks */
+.trackContainer{
+    position: absolute;
+    top: 0;
+    transition-duration: 0.4s;
+    animation-timing-function: ease;
+    cursor: default;
+}
+
+.left{
+    left: 0;
+    transform-origin: 80% 10%;
+    transform: rotate(45deg);
+}
+
+.mid{
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.right{
+    right: 0;
+    transform-origin: 20% 10%;
+    transform: rotate(-45deg);
+}
+
+.hiddenRight{
+    right: 0;
+    transform-origin: 20% -10%;
+    transform: rotate(-90deg);
+}
+
+.hiddenLeft{
+    left: 0;
+    transform-origin: 80% 10%;
+    transform: rotate(90deg);
+}
+
+.track{
+    height: 80vh;
+    padding-left: 3vw;
+    padding-right: 3vw;
+    transform-origin: 50% 32%;
+    transform: perspective(40em) rotateX(45deg);
+    overflow-y: scroll;
+    line-height: 2.8em;
+    z-index: -1;
+}
+
+.track::-webkit-scrollbar {
+    display: none;
+}
+
+.trackContent{
+    font-size: 2.4em;
+    text-align: center;
+    padding-top: 48vh;
+    padding-bottom: 16vh;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    width: calc(94vw/3);
+}
+
+.email{
+    text-decoration: none;
+    animation-name: changeFontColor;
+    animation-duration: 2.6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+a​:visited { 
+    color: black; 
+}
+
+@keyframes changeFontColor {
+    0%   {
+        color: black;}
+    5%   {
+        color: black;}
+    25%  {
+        color: rgb(0, 255, 0);}
+    50%  {
+        color: rgb(0, 255, 255)}
+    75% {
+        color: rgb(255, 0, 255)}
+    100%   {
+        color: black;}
+}
+
+
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    header{
+        font-size: 2em;
+        display: flex;
+        flex-direction: column;
+        gap:2rem;
+    }
+  }
