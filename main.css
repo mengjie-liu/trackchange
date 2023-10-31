@@ -234,8 +234,8 @@ a​:visited {
         font-size: 2em;
         display: flex;
         flex-direction: column;
-        gap:1.6rem;
-        padding-top: 1.6rem;
+        gap:1.2rem;
+        padding-top: 1.2rem;
         padding-left: 1.6rem;
         padding-right: 1.6rem;
     }
@@ -250,12 +250,12 @@ a​:visited {
     }
     
     .title:first-child{
-        margin-right: 0.6em;
+        margin-right: 0.4em;
     }
 
     .largeTitle{
-        font-size: 4em;
-        padding: 20px 56px;
+        font-size: 2em;
+        padding: 8px 24px;
     }
     
     .largeButton{
