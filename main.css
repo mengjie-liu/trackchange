@@ -6,7 +6,7 @@
 html{
     font-family: medium;
     font-size: 1em;
-    overflow:hidden;
+    overflow: hidden !important;
 }
 
 *{
@@ -18,7 +18,7 @@ html{
 body{
     height: 100%;
     width: 100%;
-    overflow: none;
+    overflow: hidden;
     padding: 0;
     margin: 0;
 }
@@ -256,14 +256,39 @@ a​:visited {
     .largeTitle{
         border: 2px solid rgba(0, 0, 0, 0.50);
         font-size: 2em;
-        padding: 8px 24px;
+        padding: 12px 32px;
     }
     
     .largeButton{
         position: fixed;
         right: 1.6rem;
-        bottom: 1.2rem;
+        bottom: 2rem;
         display: inline-flex;
         cursor: pointer;
+    }
+
+    .track{
+        height: 80vh;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        transform-origin: 50% 32%;
+        transform: perspective(40em) rotateX(45deg);
+        overflow-y: scroll;
+        line-height: 2em;
+        z-index: -1;
+    }
+
+    .track::-webkit-scrollbar {
+        display: none;
+    }
+
+    .trackContent{
+        font-size: 1.6em;
+        text-align: center;
+        padding-top: 48vh;
+        padding-bottom: 16vh;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        width: calc(94vw/3);
     }
   }
