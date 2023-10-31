@@ -302,13 +302,13 @@ a​:visited {
 
     .left{
     left: 0;
-    transform-origin: 80% -5%;
+    transform-origin: 70% 0;
     transform: rotate(45deg);
 }
 
 .right{
     right: 0;
-    transform-origin: 20% -5%;
+    transform-origin: 30% 0;
     transform: rotate(-45deg);
 }
   }
