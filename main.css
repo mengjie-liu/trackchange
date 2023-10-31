@@ -234,6 +234,35 @@ a​:visited {
         font-size: 2em;
         display: flex;
         flex-direction: column;
-        gap:2rem;
+        gap:1.6rem;
+        padding-top: 1.6rem;
+        padding-left: 1.6rem;
+        padding-right: 1.6rem;
+    }
+
+    /* .smallButton{
+        display: inline-flex;
+        justify-content: space-between;
+    } */
+
+    .title{
+        padding: 8px 24px;
+    }
+    
+    .title:first-child{
+        margin-right: 0.6em;
+    }
+
+    .largeTitle{
+        font-size: 4em;
+        padding: 20px 56px;
+    }
+    
+    .largeButton{
+        position: fixed;
+        right: 2.4rem;
+        bottom: 3rem;
+        display: inline-flex;
+        cursor: pointer;
     }
   }
