@@ -299,4 +299,16 @@ a​:visited {
         height: 40vh;
         background: linear-gradient(180deg, #FFF 30%, rgba(255, 255, 255, 0.00) 100%);
     }
+
+    .left{
+    left: 0;
+    transform-origin: 80% 0;
+    transform: rotate(45deg);
+}
+
+.right{
+    right: 0;
+    transform-origin: 20% 0;
+    transform: rotate(-45deg);
+}
   }
