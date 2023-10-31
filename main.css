@@ -276,7 +276,7 @@ a​:visited {
         transform-origin: 50% 32%;
         transform: perspective(40em) rotateX(45deg);
         overflow-y: scroll;
-        line-height: 1.8em;
+        line-height: 2em;
         z-index: -1;
     }
 
@@ -285,7 +285,7 @@ a​:visited {
     }
 
     .trackContent{
-        font-size: 1.4em;
+        font-size: 1.6em;
         text-align: center;
         padding-top: 40vh;
         padding-bottom: 12vh;
@@ -295,7 +295,8 @@ a​:visited {
     }
 
     .cloud{
-    width:120vw;
-    height: 40vh;
-}
+        width: 120vw;
+        height: 40vh;
+        background: linear-gradient(180deg, #FFF 30%, rgba(255, 255, 255, 0.00) 100%);
+    }
   }
